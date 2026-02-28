@@ -1,0 +1,29 @@
+{
+  "id": "user_001",
+  "name": "Alex Chen",
+  "avatar": "AC",
+  "monthlyIncome": 5200,
+  "currentBalance": 3847.52,
+  "savingsBalance": 2150.00,
+  "savingsGoals": [
+    { "id": "goal_1", "name": "Emergency Fund", "target": 10000, "current": 2150, "icon": "shield", "deadline": "2026-08-01" },
+    { "id": "goal_2", "name": "Japan Trip", "target": 4000, "current": 1200, "icon": "plane", "deadline": "2026-12-15" },
+    { "id": "goal_3", "name": "New Laptop", "target": 2000, "current": 650, "icon": "laptop", "deadline": "2026-06-01" }
+  ],
+  "xp": 2450,
+  "level": 7,
+  "streak": 12,
+  "badges": [
+    { "id": "b1", "name": "First Saver", "icon": "star", "earned": "2026-01-05" },
+    { "id": "b2", "name": "Week Warrior", "icon": "flame", "earned": "2026-02-10" },
+    { "id": "b3", "name": "Budget Boss", "icon": "crown", "earned": "2026-02-20" }
+  ],
+  "monthlyBudget": {
+    "food": 600,
+    "transport": 200,
+    "entertainment": 300,
+    "health": 150,
+    "shopping": 200,
+    "other": 150
+  }
+}

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fs-blue: #0051A5;
+  --color-fs-gold: #F5A623;
+  --color-fs-green: #27AE60;
+  --color-fs-red: #E74C3C;
+  --color-fs-purple: #8B5CF6;
+  --color-cal-work: #3B82F6;
+  --color-cal-personal: #8B5CF6;
+  --color-cal-social: #F59E0B;
+  --color-cal-health: #10B981;
+  --color-cal-family: #EF4444;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
