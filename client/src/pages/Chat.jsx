@@ -13,7 +13,7 @@ export default function Chat() {
   const [messages, setMessages] = useState([
     {
       role: 'ai',
-      text: "Hi Alex! I'm your FutureSpend AI assistant. I can see your calendars and spending history. I can help you understand your spending patterns, predict upcoming expenses, or find ways to save. What would you like to know?",
+      text: "Hi Evan! I'm your FutureSpend AI assistant. I can see your calendars and spending history. I can help you understand your spending patterns, predict upcoming expenses, or find ways to save. What would you like to know?",
     },
   ]);
   const [input, setInput] = useState('');
@@ -52,7 +52,7 @@ export default function Chat() {
     setMessages([
       {
         role: 'ai',
-        text: "Chat reset! Hi Alex, I'm ready to help with your finances. What would you like to know?",
+        text: "Chat reset! Hi Evan, I'm ready to help with your finances. What would you like to know?",
       },
     ]);
   };
