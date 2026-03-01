@@ -24,13 +24,13 @@ export default function Layout() {
       <aside className="w-64 bg-slate-900 text-white flex flex-col flex-shrink-0">
         {/* Logo */}
         <div className="p-5 border-b border-slate-700">
-          <div className="flex items-center gap-2">
+          <NavLink to="/" className="flex items-center gap-2" aria-label="Home">
             <TrendingUp className="w-7 h-7 text-emerald-400" />
             <div>
               <h1 className="text-lg font-bold tracking-tight">FutureSpend</h1>
               <p className="text-[10px] text-slate-400 -mt-0.5">See Tomorrow, Save Today</p>
             </div>
-          </div>
+          </NavLink>
         </div>
 
         {/* Navigation */}
