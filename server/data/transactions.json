@@ -37,6 +37,12 @@
     { "id": "txn_035", "date": "2026-02-22", "amount": 29.00, "category": "shopping", "merchant": "Uniqlo", "description": "New t-shirt", "calendarEventId": null, "calendarType": null },
     { "id": "txn_036", "date": "2026-02-12", "amount": 15.00, "category": "entertainment", "merchant": "Spotify", "description": "Monthly subscription", "calendarEventId": null, "calendarType": null },
     { "id": "txn_037", "date": "2026-02-01", "amount": 65.00, "category": "health", "merchant": "Anytime Fitness", "description": "Monthly gym membership", "calendarEventId": null, "calendarType": "health" },
-    { "id": "txn_038", "date": "2026-02-01", "amount": 85.00, "category": "health", "merchant": "YYoga", "description": "Monthly yoga membership", "calendarEventId": null, "calendarType": "health" }
+    { "id": "txn_038", "date": "2026-02-01", "amount": 85.00, "category": "health", "merchant": "YYoga", "description": "Monthly yoga membership", "calendarEventId": null, "calendarType": "health" },
+    { "id": "txn_039", "date": "2026-02-28", "amount": 76.00, "category": "food", "merchant": "Save-On-Foods", "description": "Weekly groceries", "calendarEventId": "evt_027", "calendarType": "personal" },
+    { "id": "txn_040", "date": "2026-02-28", "amount": 8.00, "category": "transport", "merchant": "TransLink", "description": "Transit to North Van for hike", "calendarEventId": "evt_028", "calendarType": "health" },
+    { "id": "txn_041", "date": "2026-02-28", "amount": 4.50, "category": "food", "merchant": "Trail Mix Co.", "description": "Trail snacks at Lynn Canyon", "calendarEventId": "evt_028", "calendarType": "health" },
+    { "id": "txn_042", "date": "2026-03-01", "amount": 65.00, "category": "health", "merchant": "Anytime Fitness", "description": "Monthly gym membership", "calendarEventId": null, "calendarType": "health" },
+    { "id": "txn_043", "date": "2026-03-01", "amount": 85.00, "category": "health", "merchant": "YYoga", "description": "Monthly yoga membership", "calendarEventId": null, "calendarType": "health" },
+    { "id": "txn_044", "date": "2026-03-01", "amount": 15.00, "category": "entertainment", "merchant": "Spotify", "description": "Monthly subscription", "calendarEventId": null, "calendarType": null }
   ]
 }

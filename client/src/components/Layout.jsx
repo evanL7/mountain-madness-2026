@@ -58,10 +58,10 @@ export default function Layout() {
         <div className="p-4 border-t border-slate-700">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-full bg-emerald-500 flex items-center justify-center text-sm font-bold">
-              AC
+              EL
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium truncate">Alex Chen</p>
+              <p className="text-sm font-medium truncate">Evan Law</p>
               <div className="flex items-center gap-1.5 text-xs text-slate-400">
                 <span className="text-amber-400">Lvl 7</span>
                 <span className="mx-0.5">|</span>
