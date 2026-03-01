@@ -60,7 +60,7 @@ export default function EventCard({ event }) {
               ${spend.toFixed(0)}
             </span>
           ) : (
-            <span className="text-sm text-emerald-500 font-medium">Free</span>
+            <span className="text-sm text-rbc-blue font-medium">Free</span>
           )}
         </div>
       </div>
@@ -116,7 +116,7 @@ export default function EventCard({ event }) {
         <button
           onClick={handleAiAnalysis}
           disabled={loading}
-          className="mt-2 flex items-center gap-1.5 px-3 py-1.5 bg-purple-50 text-purple-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-colors disabled:opacity-50"
+          className="mt-2 flex items-center gap-1.5 px-3 py-1.5 bg-rbc-blue-light text-rbc-blue rounded-lg text-xs font-medium hover:bg-blue-100 transition-colors disabled:opacity-50"
         >
           {loading ? (
             <Loader2 className="w-3 h-3 animate-spin" />

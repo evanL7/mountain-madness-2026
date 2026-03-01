@@ -63,7 +63,7 @@ export default function Chat() {
       <div className="p-4 border-b border-slate-200 flex items-center justify-between bg-white">
         <div>
           <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-purple-500" />
+            <Sparkles className="w-5 h-5 text-rbc-blue" />
             AI Financial Assistant
           </h2>
           <p className="text-xs text-slate-500">Powered by Google Gemini</p>
@@ -84,14 +84,14 @@ export default function Chat() {
             <div
               className={`max-w-[75%] rounded-2xl px-4 py-3 text-sm ${
                 msg.role === 'user'
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-rbc-navy text-white'
                   : 'bg-white border border-slate-200 text-slate-700'
               }`}
             >
               {msg.role === 'ai' && (
                 <div className="flex items-center gap-1.5 mb-1.5">
-                  <Sparkles className="w-3 h-3 text-purple-500" />
-                  <span className="text-[10px] text-purple-500 font-medium">FutureSpend AI</span>
+                  <Sparkles className="w-3 h-3 text-rbc-blue" />
+                  <span className="text-[10px] text-rbc-blue font-medium">FutureSpend AI</span>
                 </div>
               )}
               <p className="whitespace-pre-wrap">{msg.text}</p>
@@ -142,13 +142,13 @@ export default function Chat() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about your spending, savings, or upcoming events..."
-            className="flex-1 px-4 py-2.5 bg-slate-100 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 px-4 py-2.5 bg-slate-100 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-rbc-blue"
             disabled={loading}
           />
           <button
             type="submit"
             disabled={loading || !input.trim()}
-            className="px-4 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors disabled:opacity-50"
+            className="px-4 py-2.5 bg-rbc-navy text-white rounded-xl hover:bg-rbc-navy-light transition-colors disabled:opacity-50"
           >
             <Send className="w-4 h-4" />
           </button>

@@ -20,7 +20,7 @@ function HealthScore({ score }) {
   const color = score >= 70 ? '#10B981' : score >= 40 ? '#F59E0B' : '#EF4444';
 
   return (
-    <Card title="Financial Health Score" action={<span className="flex items-center gap-1 text-xs text-purple-500"><Sparkles className="w-3 h-3" />AI Powered</span>}>
+    <Card title="Financial Health Score" action={<span className="flex items-center gap-1 text-xs text-rbc-blue"><Sparkles className="w-3 h-3" />AI Powered</span>}>
       <div className="flex items-center gap-6">
         <div className="relative w-36 h-36">
           <svg className="w-36 h-36 -rotate-90" viewBox="0 0 140 140">
@@ -100,7 +100,7 @@ function WeekdayPattern({ data }) {
             <XAxis dataKey="day" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#94A3B8' }} />
             <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#94A3B8' }} tickFormatter={(v) => `$${v}`} />
             <Tooltip formatter={(value) => [`$${value}`, 'Avg Spend']} />
-            <Area type="monotone" dataKey="avgSpend" stroke="#8B5CF6" fill="#8B5CF640" strokeWidth={2} />
+            <Area type="monotone" dataKey="avgSpend" stroke="#003168" fill="#00316840" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
@@ -111,11 +111,11 @@ function WeekdayPattern({ data }) {
 function HiddenPatterns({ patterns }) {
   if (!patterns?.length) return null;
   return (
-    <Card title="Hidden Patterns" action={<span className="text-xs text-purple-500 flex items-center gap-1"><Eye className="w-3 h-3" />AI Discovered</span>}>
+    <Card title="Hidden Patterns" action={<span className="text-xs text-rbc-blue flex items-center gap-1"><Eye className="w-3 h-3" />AI Discovered</span>}>
       <div className="space-y-3">
         {patterns.map((p, i) => (
-          <div key={i} className="p-3 bg-purple-50 rounded-lg border border-purple-100">
-            <p className="text-sm font-medium text-purple-800">{p.pattern}</p>
+          <div key={i} className="p-3 bg-rbc-blue-light rounded-lg border border-blue-200">
+            <p className="text-sm font-medium text-rbc-navy">{p.pattern}</p>
             <p className="text-xs text-slate-600 mt-1">{p.evidence}</p>
             <p className="text-xs text-slate-500 mt-0.5">Impact: {p.financialImpact}</p>
             <p className="text-xs text-emerald-600 font-medium mt-1">{p.recommendation}</p>
@@ -132,8 +132,8 @@ function ActionItems({ actions }) {
     <Card title="Top Actions to Take">
       <div className="space-y-2">
         {actions.map((action, i) => (
-          <div key={i} className="flex items-center gap-3 p-3 bg-emerald-50 rounded-lg">
-            <span className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold">{i + 1}</span>
+          <div key={i} className="flex items-center gap-3 p-3 bg-rbc-blue-light rounded-lg">
+            <span className="w-6 h-6 rounded-full bg-rbc-navy text-white flex items-center justify-center text-xs font-bold">{i + 1}</span>
             <p className="text-sm text-slate-700">{action}</p>
           </div>
         ))}
@@ -152,9 +152,9 @@ export default function Insights() {
           <h2 className="text-xl font-bold text-slate-800">AI Insights</h2>
           <p className="text-sm text-slate-500">Powered by Google Gemini</p>
         </div>
-        <div className="flex items-center gap-3 p-6 bg-purple-50 rounded-xl">
-          <div className="animate-spin w-5 h-5 border-2 border-purple-500 border-t-transparent rounded-full" />
-          <p className="text-sm text-purple-700">FutureSpend AI is analyzing your patterns...</p>
+        <div className="flex items-center gap-3 p-6 bg-rbc-blue-light rounded-xl">
+          <div className="animate-spin w-5 h-5 border-2 border-rbc-blue border-t-transparent rounded-full" />
+          <p className="text-sm text-rbc-navy">FutureSpend AI is analyzing your patterns...</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <Skeleton lines={8} />

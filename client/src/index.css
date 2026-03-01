@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-fs-blue: #0051A5;
-  --color-fs-gold: #F5A623;
-  --color-fs-green: #27AE60;
-  --color-fs-red: #E74C3C;
-  --color-fs-purple: #8B5CF6;
+  /* RBC Brand Colors */
+  --color-rbc-navy: #003168;
+  --color-rbc-navy-light: #004080;
+  --color-rbc-navy-dark: #002550;
+  --color-rbc-blue: #0051A5;
+  --color-rbc-blue-light: #E8F0FE;
+  --color-rbc-gold: #FEDB00;
+  --color-rbc-gold-dark: #D4B800;
+
+  /* Calendar Category Colors */
   --color-cal-work: #3B82F6;
   --color-cal-personal: #8B5CF6;
   --color-cal-social: #F59E0B;

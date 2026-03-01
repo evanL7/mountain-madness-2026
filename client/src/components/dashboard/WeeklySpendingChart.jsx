@@ -87,10 +87,10 @@ export default function WeeklySpendingChart({ weekEvents }) {
                   key={index}
                   fill={
                     entry.isToday
-                      ? '#0051A5'
+                      ? '#003168'
                       : entry.isPast
                         ? '#CBD5E1'
-                        : '#93C5FD'
+                        : '#0051A5'
                   }
                 />
               ))}

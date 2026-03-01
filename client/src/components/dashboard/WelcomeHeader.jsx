@@ -26,12 +26,12 @@ export default function WelcomeHeader({ user, weekEvents }) {
         <p className="text-sm text-slate-500 mt-0.5">{dateStr}</p>
       </div>
       <div className="flex items-center gap-4">
-        <div className="flex items-center gap-1.5 bg-orange-50 text-orange-600 px-3 py-1.5 rounded-full text-sm font-medium">
-          <Flame className="w-4 h-4" />
+        <div className="flex items-center gap-1.5 bg-rbc-blue-light text-rbc-navy px-3 py-1.5 rounded-full text-sm font-medium">
+          <Flame className="w-4 h-4 text-rbc-gold-dark" />
           {user?.streak || 0} day streak
         </div>
-        <div className="flex items-center gap-1.5 bg-purple-50 text-purple-600 px-3 py-1.5 rounded-full text-sm font-medium">
-          <Star className="w-4 h-4" />
+        <div className="flex items-center gap-1.5 bg-rbc-blue-light text-rbc-navy px-3 py-1.5 rounded-full text-sm font-medium">
+          <Star className="w-4 h-4 text-rbc-gold-dark" />
           Level {user?.level || 0}
         </div>
         {todayEvents.length > 0 && (

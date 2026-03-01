@@ -63,7 +63,7 @@ export default function UpcomingEvents({ events }) {
                 </span>
               )}
               {spend === 0 && (
-                <span className="text-xs text-emerald-500 font-medium flex-shrink-0">Free</span>
+                <span className="text-xs text-rbc-blue font-medium flex-shrink-0">Free</span>
               )}
             </div>
           );

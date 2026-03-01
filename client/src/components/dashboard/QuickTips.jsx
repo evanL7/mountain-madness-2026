@@ -16,7 +16,7 @@ export default function QuickTips({ tips, loading }) {
     <Card
       title="AI Tips for Today"
       action={
-        <span className="flex items-center gap-1 text-xs text-purple-500">
+        <span className="flex items-center gap-1 text-xs text-rbc-blue">
           <Sparkles className="w-3 h-3" />
           Powered by Gemini
         </span>
@@ -30,8 +30,8 @@ export default function QuickTips({ tips, loading }) {
             const Icon = ICONS[tip.icon] || Lightbulb;
             return (
               <div key={i} className="flex gap-3 p-3 bg-slate-50 rounded-lg">
-                <div className="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center flex-shrink-0">
-                  <Icon className="w-4 h-4 text-amber-600" />
+                <div className="w-8 h-8 rounded-full bg-rbc-blue-light flex items-center justify-center flex-shrink-0">
+                  <Icon className="w-4 h-4 text-rbc-gold-dark" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-slate-700">{tip.text}</p>

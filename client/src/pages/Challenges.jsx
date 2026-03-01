@@ -24,14 +24,14 @@ function ActiveChallenges({ challenges }) {
             <div key={ch.id} className="p-3 bg-slate-50 rounded-lg">
               <div className="flex items-center justify-between mb-2">
                 <h4 className="text-sm font-semibold text-slate-700">{ch.title}</h4>
-                <span className="text-xs text-purple-600 font-medium">+{ch.xpReward} XP</span>
+                <span className="text-xs text-rbc-blue font-medium">+{ch.xpReward} XP</span>
               </div>
               <p className="text-xs text-slate-500 mb-2">{ch.description}</p>
               <div className="flex items-center gap-3">
                 <div className="flex-1">
                   <div className="h-2.5 bg-slate-200 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-purple-500 to-purple-400 rounded-full transition-all duration-500"
+                      className="h-full bg-gradient-to-r from-rbc-navy to-rbc-blue rounded-full transition-all duration-500"
                       style={{ width: `${pct}%` }}
                     />
                   </div>
@@ -62,16 +62,16 @@ function AvailableChallenges({ challenges, suggestions, suggestionsLoading }) {
     <Card title="Available Challenges">
       <div className="space-y-3">
         {suggestionsLoading && (
-          <div className="flex items-center gap-2 p-3 bg-purple-50 rounded-lg">
-            <Loader2 className="w-4 h-4 text-purple-500 animate-spin" />
-            <span className="text-xs text-purple-600">AI generating personalized challenges...</span>
+          <div className="flex items-center gap-2 p-3 bg-rbc-blue-light rounded-lg">
+            <Loader2 className="w-4 h-4 text-rbc-blue animate-spin" />
+            <span className="text-xs text-rbc-navy">AI generating personalized challenges...</span>
           </div>
         )}
         {suggestions?.suggestedChallenges?.map((ch, i) => (
-          <div key={`ai-${i}`} className="p-3 border border-purple-200 bg-purple-50/50 rounded-lg">
+          <div key={`ai-${i}`} className="p-3 border border-blue-200 bg-rbc-blue-light/50 rounded-lg">
             <div className="flex items-center gap-1.5 mb-1">
-              <Sparkles className="w-3 h-3 text-purple-500" />
-              <span className="text-[10px] text-purple-500 font-medium">AI Suggested For You</span>
+              <Sparkles className="w-3 h-3 text-rbc-blue" />
+              <span className="text-[10px] text-rbc-blue font-medium">AI Suggested For You</span>
             </div>
             <div className="flex items-center justify-between mb-1">
               <h4 className="text-sm font-semibold text-slate-700">{ch.title}</h4>
@@ -82,10 +82,10 @@ function AvailableChallenges({ challenges, suggestions, suggestionsLoading }) {
             <p className="text-xs text-slate-500 mb-2">{ch.description}</p>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-xs text-slate-400">
-                <span className="text-purple-600 font-medium">+{ch.xpReward} XP</span>
+                <span className="text-rbc-blue font-medium">+{ch.xpReward} XP</span>
                 <span className="text-emerald-600 font-medium">Save ${ch.potentialSaving}</span>
               </div>
-              <button className="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-lg hover:bg-purple-700">
+              <button className="px-3 py-1 bg-rbc-navy text-white text-xs font-medium rounded-lg hover:bg-rbc-navy-light">
                 Join
               </button>
             </div>
@@ -104,9 +104,9 @@ function AvailableChallenges({ challenges, suggestions, suggestionsLoading }) {
               <div className="flex items-center gap-3 text-xs text-slate-400">
                 <span className="flex items-center gap-1"><Users className="w-3 h-3" />{ch.participants}</span>
                 <span className="text-emerald-600 font-medium">Save ${ch.potentialSaving}</span>
-                <span className="text-purple-600 font-medium">+{ch.xpReward} XP</span>
+                <span className="text-rbc-blue font-medium">+{ch.xpReward} XP</span>
               </div>
-              <button className="px-3 py-1 bg-blue-600 text-white text-xs font-medium rounded-lg hover:bg-blue-700">
+              <button className="px-3 py-1 bg-rbc-navy text-white text-xs font-medium rounded-lg hover:bg-rbc-navy-light">
                 Join
               </button>
             </div>
@@ -128,7 +128,7 @@ function Leaderboard({ data }) {
           <div
             key={i}
             className={`flex items-center gap-3 p-2.5 rounded-lg ${
-              user.isCurrentUser ? 'bg-blue-50 border border-blue-200' : 'bg-slate-50'
+              user.isCurrentUser ? 'bg-rbc-blue-light border border-blue-200' : 'bg-slate-50'
             }`}
           >
             <span className={`text-lg font-bold w-6 text-center ${RANK_STYLE[i] || 'text-slate-400'}`}>
@@ -139,14 +139,14 @@ function Leaderboard({ data }) {
             </div>
             <div className="flex-1">
               <p className="text-sm font-medium text-slate-700">
-                {user.name} {user.isCurrentUser && <span className="text-xs text-blue-500">(You)</span>}
+                {user.name} {user.isCurrentUser && <span className="text-xs text-rbc-blue">(You)</span>}
               </p>
               <p className="text-xs text-slate-400">Level {user.level}</p>
             </div>
             <div className="text-right">
-              <p className="text-sm font-bold text-purple-600">{user.xp.toLocaleString()} XP</p>
+              <p className="text-sm font-bold text-rbc-navy">{user.xp.toLocaleString()} XP</p>
               <p className="text-xs text-slate-400 flex items-center gap-0.5 justify-end">
-                <Flame className="w-3 h-3 text-orange-400" />{user.streak} days
+                <Flame className="w-3 h-3 text-rbc-gold-dark" />{user.streak} days
               </p>
             </div>
           </div>
@@ -177,7 +177,7 @@ export default function Challenges() {
     <div className="p-6 space-y-6">
       <div>
         <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
-          <Trophy className="w-5 h-5 text-amber-500" />
+          <Trophy className="w-5 h-5 text-rbc-gold-dark" />
           Challenges
         </h2>
         <p className="text-sm text-slate-500">Complete challenges to earn XP and save money</p>

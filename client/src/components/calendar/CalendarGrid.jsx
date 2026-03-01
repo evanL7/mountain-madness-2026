@@ -80,15 +80,15 @@ export default function CalendarGrid({ events, selectedDate, onSelectDate, filte
             <div
               key={dateStr}
               onClick={() => onSelectDate(dateStr)}
-              className={`${bgClass} p-2 min-h-[80px] cursor-pointer hover:bg-blue-50 transition-colors ${
-                isSelected ? 'ring-2 ring-blue-500 ring-inset' : ''
+              className={`${bgClass} p-2 min-h-[80px] cursor-pointer hover:bg-rbc-blue-light transition-colors ${
+                isSelected ? 'ring-2 ring-rbc-blue ring-inset' : ''
               }`}
             >
               <div className="flex items-center justify-between mb-1">
                 <span
                   className={`text-sm ${
                     isToday
-                      ? 'bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold'
+                      ? 'bg-rbc-navy text-white w-6 h-6 rounded-full flex items-center justify-center font-bold'
                       : 'text-slate-700'
                   }`}
                 >
