@@ -2,9 +2,12 @@
 
 A small hackathon app that predicts upcoming spending by combining calendar events and transaction data with AI.
 
+**View the project on Devpost:**  
+https://devpost.com/software/futurespend-l7qzit
+
 ## Prerequisites
 
-- Node.js 16+ installed (for both client and server)
+- Node.js 16+ installed
 
 ## Quick Start
 
